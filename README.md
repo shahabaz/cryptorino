@@ -23,6 +23,7 @@ Make sure that you buy I2C oled display for this project.
 Will update the circuit and rest of the project related images once done.
 
 
-
+#### Working Issues
+* I was so dumb that I didn't check the **https** example provided in the arduino rather was trying http example from the internet and was hitting **https** site using the **http** example. Atleast was able to get the https example. Will update version 2 using https and update the application with some cleaner code ofcourse.
 
 -wolf
