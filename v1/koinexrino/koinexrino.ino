@@ -1,3 +1,4 @@
+ 
 #include <Wire.h>  
 #include <ESP8266WiFi.h>
 #include <ESP8266HTTPClient.h>
@@ -8,12 +9,15 @@
 #define CLEAR 1
 #define DONT_CLEAR 0
 
+#define SDA_D1 5   //SDA of the display is connected to D1 of nodemcu
+#define SCL_D2 4   //SCL of the display is connected to D2 of nodemcu
+
 const char* ssid = "No Internet Access";
 const char* password = "sollamudiathu"; 
 
  
 
-SSD1306  display(0x3c, 5, 4); // Initialise the OLED display using Wire library
+SSD1306  display(0x3c, SDA_D1, SCL_D2); // Initialise the OLED display using Wire library
  
 void setup () {
  
